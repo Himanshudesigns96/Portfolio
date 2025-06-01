@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Joshi | Freelance Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Add GSAP for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Add Tilt.js for 3D card effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <!-- Add particles.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">Himanshu Joshi</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div id="hero-canvas"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch-text">I Build Fast, Beautiful Websites</h1>
+                <p>Freelance web developer delivering modern, <br>mobile-friendly websites in 1–2 days.</p>
+                <a href="https://wa.me/9370853626" class="btn primary-btn">Let's Work Together →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm Himanshu, a freelance website developer based in India. I build clean, responsive websites
+                        using HTML, CSS, and JavaScript — perfect for startups, coaches, and businesses. I focus on
+                        fast-loading, SEO-friendly sites that work beautifully on every device. Need something more
+                        complex? I can also build with tools like React when your project requires it.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-3d-container">
+                        <img src="Freelancer Working.jpg" alt="Freelancer working">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Packages (Special Offer for First 3 Clients)</h2>
+            <div class="services-grid">
+                <div class="service-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="offer-badge">Limited Offer</div>
+                    <div class="service-icon">
+                        <i class="fas fa-file"></i>
+                    </div>
+                    <h3>Landing Page Design</h3>
+                    <p>One-page site for products, portfolios, events, or courses.</p>
+                    <div class="service-price">
+                        <span class="original-price">₹3,499</span>
+                        <span class="discounted-price">₹2,499</span>
+                    </div>
+                    <div class="service-delivery">Delivered in 24–48 hours</div>
+                </div>
+
+                <div class="service-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="offer-badge">Limited Offer</div>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Business Website (3–5 Pages)</h3>
+                    <p>Website for small businesses or personal branding.</p>
+                    <div class="service-price">
+                        <span class="original-price">₹5,499</span>
+                        <span class="discounted-price">₹3,999</span>
+                    </div>
+                    <div class="service-delivery">Delivered in 2–3 days</div>
+                </div>
+
+                <div class="service-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="offer-badge">Limited Offer</div>
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Website Redesign</h3>
+                    <p>Transform outdated sites into fast, modern experiences.</p>
+                    <div class="service-price">
+                        <span class="original-price">₹4,499</span>
+                        <span class="discounted-price">₹2,999</span>
+                    </div>
+                    <div class="service-delivery">Delivered in 1–2 days</div>
+                </div>
+            </div>
+            <!-- New wrapper for express delivery and offer note -->
+            <div class="offer-footer">
+                <div class="express-delivery">
+                    <p><i class="fas fa-bolt"></i> Express Delivery: +₹999 (Get it in 24 hrs)</p>
+                </div>
+                <div class="offer-note">
+                    <p>🔥 These prices are available only for the first 3 clients!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Demo Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.3">
+                    <div class="portfolio-images">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                            alt="Fitness Coach Website">
+                    </div>
+                    <h3>Fitness Coach Website</h3>
+                    <p>A clean site for trainers with programs and testimonials.</p>
+                    <a href="https://himanshudesigns96.github.io/Fitness-Coach-Website/" class="btn secondary-btn"
+                        target="_blank">View Demo</a>
+                </div>
+
+                <div class="portfolio-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.3">
+                    <div class="portfolio-images">
+                        <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="E-commerce Homepage">
+                    </div>
+                    <h3>E-commerce Homepage</h3>
+                    <p>A modern homepage for online stores.</p>
+                    <a href="https://himanshudesigns96.github.io/Tech-Heaven/" class="btn secondary-btn"
+                        target="_blank">View Demo</a>
+                </div>
+
+                <div class="portfolio-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare
+                    data-tilt-max-glare="0.3">
+                    <div class="portfolio-images">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                            alt="Startup Landing Page">
+                    </div>
+                    <h3>Startup Landing Page</h3>
+                    <p>A high-conversion landing page for SaaS or apps.</p>
+                    <a href="https://himanshudesigns96.github.io/FlowTrack/" class="btn secondary-btn"
+                        target="_blank">View Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Your Website</h2>
+            <p class="contact-text">Reach out for a fast, affordable, and modern website built in just 1–2 days. I'll
+                transform your ideas into a stunning online presence that helps your business grow.</p>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>himanshujoshi.designs@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Based in India — Serving clients globally</p>
+                </div>
+            </div>
+
+            <a href="https://wa.me/9370853626" class="btn primary-btn whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Click to Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Himanshu Joshi</div>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Himanshu Joshi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Reveal animations on scroll
+        const revealElements = document.querySelectorAll('.service-card, .portfolio-card, .about-content, .contact-info, .offer-card');
+
+        function reveal() {
+            revealElements.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Call once on page load
+
+        // Initialize Tilt.js for 3D card effects
+        VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.3,
+        });
+
+        // Initialize particles.js for background effect
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#3498db" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#3498db", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });
+
+        // 3D Hero Section with Three.js
+        const heroSection = document.getElementById('hero-canvas');
+        let scene, camera, renderer;
+        let geometry, material, mesh;
+
+        function initThreeJS() {
+            // Create scene
+            scene = new THREE.Scene();
+
+            // Create camera
+            camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 5;
+
+            // Create renderer
+            renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            heroSection.appendChild(renderer.domElement);
+
+            // Create geometry - a sphere of particles
+            geometry = new THREE.BufferGeometry();
+            const vertices = [];
+
+            for (let i = 0; i < 10000; i++) {
+                const x = THREE.MathUtils.randFloatSpread(20);
+                const y = THREE.MathUtils.randFloatSpread(20);
+                const z = THREE.MathUtils.randFloatSpread(20);
+                vertices.push(x, y, z);
+            }
+
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+
+            // Create material
+            material = new THREE.PointsMaterial({
+                color: 0x3498db,
+                size: 0.05,
+                transparent: true,
+                opacity: 0.7
+            });
+
+            // Create mesh
+            mesh = new THREE.Points(geometry, material);
+            scene.add(mesh);
+
+            // Handle window resize
+            window.addEventListener('resize', onWindowResize);
+
+            // Start animation loop
+            animate();
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // Rotate the particle sphere
+            mesh.rotation.x += 0.001;
+            mesh.rotation.y += 0.002;
+
+            renderer.render(scene, camera);
+        }
+
+        // Initialize Three.js scene
+        initThreeJS();
+
+        // GSAP animations for text elements
+        gsap.from(".hero h1", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out" });
+        gsap.from(".hero p", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.3 });
+        gsap.from(".hero .btn", { duration: 1.5, y: 50, opacity: 0, ease: "power3.out", delay: 0.6 });
+
+        // Glitch text effect for heading
+        const glitchText = document.querySelector('.glitch-text');
+
+        function glitchEffect() {
+            const randomTime = Math.random() * 10000 + 5000; // Random time between 5-15 seconds
+
+            setTimeout(() => {
+                glitchText.classList.add('glitch');
+
+                setTimeout(() => {
+                    glitchText.classList.remove('glitch');
+                    glitchEffect(); // Repeat the effect
+                }, 200);
+            }, randomTime);
+        }
+
+        glitchEffect(); // Start the glitch effect
+    </script>
+</body>
+
+</html>
